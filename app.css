@@ -1,0 +1,11 @@
+#wrapper {
+  margin: 50px 100px;
+}
+
+table th {
+  word-break: keep-all;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>scraping for lai</title>
+    <link rel="stylesheet" href="app.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 class="text-center margin-bottom-sm">台北國際塑膠展覽會</h1>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>公司名稱</th>
+              <th>品牌名稱</th>
+              <th>主要產品</th>
+              <th>官方網站</th>
+              <th>業務連絡</th>
+              <th>攤位號碼</th>
+              <th>資料來自</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="firm in firms">
+              <td>{{ firm['公司名稱'] }}</td>
+              <td>{{ firm['品牌名稱'] }}</td>
+              <td>{{ firm['主要產品'] }}</td>
+              <td>{{ firm['官方網站'] }}</td>
+              <td>{{ firm['業務連絡'] }}</td>
+              <td>{{ firm['攤位號碼'] }}</td>
+              <td>{{ firm['資料來自'] }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
