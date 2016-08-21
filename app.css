@@ -9,3 +9,7 @@ table th {
 .margin-bottom-sm {
   margin-bottom: 20px;
 }
+
+[v-cloak] {
+  display: none;  
+}
